@@ -1,0 +1,6 @@
+require("settings/options")
+require("settings/shared")
+require("settings/mappings")
+require("settings/autocmds")
+require("settings/netrw")
+require("plugins")
