@@ -26,11 +26,14 @@ return function(use)
   }
 
   -- NOTE: `:Noice` to open message history + `:Noice telescope` to open message history in Telescope.
+  -- [[
   use({
     "folke/noice.nvim",
+    cond = true,
     event = "VimEnter",
     config = function()
       require("noice").setup({
+        enabled = false,
         views = {
           cmdline_popup = {
             size = {
