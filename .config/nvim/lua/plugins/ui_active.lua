@@ -26,7 +26,7 @@ return function(use)
   }
 
   -- NOTE: `:Noice` to open message history + `:Noice telescope` to open message history in Telescope.
-  -- [[
+  --[[
   use({
     "folke/noice.nvim",
     cond = true,
@@ -104,6 +104,7 @@ return function(use)
       "rcarriga/nvim-notify",
     }
   })
+--]]
 
   -- tab ui improvments
   use { "akinsho/bufferline.nvim",

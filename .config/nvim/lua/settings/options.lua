@@ -14,6 +14,7 @@ vim.o.ignorecase = true
 vim.o.inccommand = "split"
 -- vim.o.lazyredraw = true (disabled as problematic with Noice plugin)
 vim.o.number = true
+vim.o.relativenumber = true
 vim.o.scrolloff = 5
 vim.o.shiftwidth = 2
 -- vim.o.shortmess = vim.o.shortmess .. "c" -- .. is equivalent to += in vimscript
@@ -30,6 +31,7 @@ vim.o.tabstop = 2
 vim.o.updatetime = 1000 -- affects CursorHold and subsequently things like highlighting Code Actions, and the Noice UI popups.
 vim.o.wrap = false
 vim.o.mouse = false
+vim.g.mapleader = " "
 
 if vim.fn.has("termguicolors") == 1 then
   vim.o.termguicolors = true --termgui colors

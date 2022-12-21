@@ -188,15 +188,6 @@ _G.packer_plugins = {
     path = "/home/yume/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
-  ["noice.nvim"] = {
-    cond = { true },
-    config = { "\27LJ\2\2�\6\0\0\6\0*\00056\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\v\0005\3\5\0005\4\4\0=\4\6\0035\4\b\0005\5\a\0=\5\t\4=\4\n\3=\3\f\0025\3\r\0005\4\14\0=\4\15\0035\4\16\0=\4\6\0035\4\17\0005\5\18\0=\5\19\4=\4\20\0035\4\22\0005\5\21\0=\5\t\4=\4\n\3=\3\23\2=\2\24\0014\2\3\0005\3\26\0005\4\25\0=\4\27\0035\4\28\0=\4\29\3>\3\1\2=\2\30\0015\2\31\0=\2 \0015\2$\0005\3#\0005\4\"\0005\5!\0=\5\t\4=\4\n\3=\3\29\2=\2%\0015\2'\0005\3&\0=\3(\2=\2)\1B\0\2\1K\0\1\0\blsp\rprogress\1\0\0\1\0\1\fenabled\1\18documentation\1\0\0\1\0\0\1\0\0\1\0\1\16FloatBorder\23DiagnosticSignInfo\fpresets\1\0\2\19lsp_doc_border\2\26long_message_to_split\2\vroutes\topts\1\0\1\tskip\2\vfilter\1\0\0\1\0\3\tkind\5\nevent\rmsg_show\tfind\fwritten\nviews\14popupmenu\1\0\0\1\0\2\16FloatBorder\23DiagnosticSignInfo\vNormal\vNormal\vborder\fpadding\1\3\0\0\3\0\4\0����\3\1\0\1\nstyle\frounded\1\0\2\nwidth\3d\vheight\3\n\rposition\1\0\2\brow\3\b\bcol\b50%\1\0\1\rrelative\veditor\18cmdline_popup\1\0\0\16win_options\17winhighlight\1\0\0\1\0\4\16FloatBorder\23DiagnosticSignInfo\vSearch\5\14IncSearch\5\vNormal\vNormal\tsize\1\0\0\1\0\2\nwidth\b40%\vheight\tauto\1\0\1\fenabled\1\nsetup\nnoice\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/yume/.local/share/nvim/site/pack/packer/opt/noice.nvim",
-    url = "https://github.com/folke/noice.nvim"
-  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/yume/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -238,16 +229,17 @@ _G.packer_plugins = {
     path = "/home/yume/.local/share/nvim/site/pack/packer/start/nvim-navic",
     url = "https://github.com/SmiteshP/nvim-navic"
   },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "/home/yume/.local/share/nvim/site/pack/packer/start/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
-  },
   ["nvim-spectre"] = {
     config = { "\27LJ\2\2�\1\0\0\5\0\15\0\0196\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\6\0005\2\4\0005\3\3\0=\3\5\2=\2\a\1B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\1\v\0'\2\f\0'\3\r\0005\4\14\0B\0\5\1K\0\1\0\1\0\1\tdesc\23search and replace+<Cmd>lua require('spectre').open()<CR>\14<leader>S\6n\bset\vkeymap\bvim\19replace_engine\1\0\0\bsed\1\0\0\1\0\1\bcmd\tgsed\nsetup\fspectre\frequire\0" },
     loaded = true,
     path = "/home/yume/.local/share/nvim/site/pack/packer/start/nvim-spectre",
     url = "https://github.com/nvim-pack/nvim-spectre"
+  },
+  ["nvim-treesitter"] = {
+    config = { "\27LJ\2\2�\2\0\0\3\0\b\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\1B\0\2\1K\0\1\0\14highlight\1\0\1\venable\2\21ensure_installed\1\0\3&additional_vim_regex_highlighting\1\17auto_install\2\17sync_install\1\1\17\0\0\thelp\tyaml\15javascript\15typescript\btsx\tjson\thtml\bcss\vpython\blua\tfish\ago\ngomod\vgowork\15dockerfile\rmarkdown\nsetup\28nvim-treesitter.configs\frequire\0" },
+    loaded = true,
+    path = "/home/yume/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -350,18 +342,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: LuaSnip
-time([[Config for LuaSnip]], true)
-try_loadstring("\27LJ\2\2�\2\0\0\a\0\r\0\0236\0\0\0009\0\1\0009\0\2\0005\1\3\0\18\2\0\0'\3\4\0'\4\5\0'\5\6\0\18\6\1\0B\2\5\1\18\2\0\0'\3\4\0'\4\a\0'\5\b\0\18\6\1\0B\2\5\0016\2\t\0'\3\n\0B\2\2\0029\2\v\0025\3\f\0B\2\2\1K\0\1\0\1\0\1\npaths\16~/.snippets\tload\29luasnip.loaders.from_lua\frequire-<cmd>lua require('luasnip').jump(-1)<CR>\22<leader><leader>;,<cmd>lua require('luasnip').jump(1)<CR>\22<leader><leader>'\6i\1\0\2\vsilent\2\fnoremap\2\20nvim_set_keymap\bapi\bvim\0", "config", "LuaSnip")
-time([[Config for LuaSnip]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\2�\2\0\0\3\0\b\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\1B\0\2\1K\0\1\0\14highlight\1\0\1\venable\2\21ensure_installed\1\0\3&additional_vim_regex_highlighting\1\17auto_install\2\17sync_install\1\1\17\0\0\thelp\tyaml\15javascript\15typescript\btsx\tjson\thtml\bcss\vpython\blua\tfish\ago\ngomod\vgowork\15dockerfile\rmarkdown\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Config for: nvim-cmp
 time([[Config for nvim-cmp]], true)
 try_loadstring("\27LJ\2\2C\0\1\3\0\4\0\a6\1\0\0'\2\1\0B\1\2\0029\1\2\0019\2\3\0B\1\2\1K\0\1\0\tbody\15lsp_expand\fluasnip\frequire�\b\1\0\b\0:\0~6\0\0\0'\1\1\0B\0\2\0026\1\0\0'\2\2\0B\1\2\0029\2\3\0005\3\a\0005\4\5\0003\5\4\0=\5\6\4=\4\b\0035\4\f\0009\5\t\0009\5\n\0059\5\v\5B\5\1\2=\5\r\0049\5\t\0009\5\n\0059\5\v\5B\5\1\2=\5\14\4=\4\n\0035\4\17\0009\5\15\0009\5\16\5B\5\1\2=\5\18\0049\5\15\0009\5\19\5B\5\1\2=\5\20\0049\5\15\0009\5\16\5B\5\1\2=\5\21\0049\5\15\0009\5\19\5B\5\1\2=\5\22\0049\5\15\0009\5\23\5)\6��B\5\2\2=\5\24\0049\5\15\0009\5\23\5)\6\4\0B\5\2\2=\5\25\0049\5\15\0009\6\15\0009\6\26\6B\6\1\0025\a\27\0B\5\3\2=\5\28\0049\5\15\0009\5\29\5B\5\1\2=\5\30\0049\5\15\0009\5\31\0055\6\"\0009\a \0009\a!\a=\a#\6B\5\2\2=\5$\4=\4\15\0039\4\t\0009\4%\0044\5\a\0005\6&\0>\6\1\0055\6'\0>\6\2\0055\6(\0>\6\3\0055\6)\0>\6\4\0055\6*\0>\6\5\0055\6+\0>\6\6\5B\4\2\2=\4%\0035\4.\0009\5,\0015\6-\0B\5\2\2=\5/\4=\0040\3B\2\2\0019\2\3\0009\0021\0025\0032\0005\0044\0009\5\15\0009\0053\0059\0051\5B\5\1\2=\5\15\0044\5\3\0005\0065\0>\6\1\5=\5%\4B\2\3\0019\2\3\0009\0021\0025\0036\0005\0047\0009\5\15\0009\0053\0059\0051\5B\5\1\2=\5\15\0044\5\3\0005\0068\0>\6\1\0055\0069\0>\6\2\5=\5%\4B\2\3\1K\0\1\0\1\0\1\tname\tpath\1\0\1\tname\fcmdline\1\0\0\1\2\0\0\6:\1\0\1\tname\vbuffer\1\0\0\vpreset\1\3\0\0\6/\6?\fcmdline\15formatting\vformat\1\0\0\1\0\2\rmaxwidth\0032\15wirth_text\1\15cmp_format\1\0\1\tname\rnvim_lua\1\0\1\tname\fluasnip\1\0\1\tname\vbuffer\1\0\1\tname\tpath\1\0\1\tname\28nvim_lsp_signature_help\1\0\1\tname\rnvim_lsp\fsources\t<CR>\rbehavior\1\0\1\vselect\2\vInsert\20ConfirmBehavior\fconfirm\n<C-e>\nclose\14<C-Space>\1\3\0\0\6i\6c\rcomplete\n<C-f>\n<C-b>\16scroll_docs\f<Right>\v<Left>\v<Down>\21select_next_item\t<Up>\1\0\0\21select_prev_item\fmapping\18documentation\15completion\1\0\0\rbordered\vwindow\vconfig\fsnippet\1\0\0\vexpand\1\0\0\0\nsetup\flspkind\bcmp\frequire\0", "config", "nvim-cmp")
 time([[Config for nvim-cmp]], false)
--- Config for: which-key.nvim
-time([[Config for which-key.nvim]], true)
-try_loadstring("\27LJ\2\0027\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
-time([[Config for which-key.nvim]], false)
+-- Config for: symbols-outline.nvim
+time([[Config for symbols-outline.nvim]], true)
+try_loadstring("\27LJ\2\2�\t\0\0\4\0:\0=6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\5\0005\3\4\0=\3\6\0025\3\a\0=\3\b\0025\3\t\0=\3\n\0025\3\v\0=\3\f\0025\3\r\0=\3\14\0025\3\15\0=\3\16\0025\3\17\0=\3\18\0025\3\19\0=\3\20\0025\3\21\0=\3\22\0025\3\23\0=\3\24\0025\3\25\0=\3\26\0025\3\27\0=\3\28\0025\3\29\0=\3\30\0025\3\31\0=\3 \0025\3!\0=\3\"\0025\3#\0=\3$\0025\3%\0=\3&\0025\3'\0=\3(\0025\3)\0=\3*\0025\3+\0=\3,\0025\3-\0=\3.\0025\3/\0=\0030\0025\0031\0=\0032\0025\0033\0=\0034\0025\0035\0=\0036\0025\0037\0=\0038\2=\0029\1B\0\2\1K\0\1\0\fsymbols\18TypeParameter\1\0\2\ahl\15GruvboxRed\ticon\t𝙏\rOperator\1\0\2\ahl\15TSOperator\ticon\6+\nEvent\1\0\2\ahl\17GruvboxGreen\ticon\t🗲\vStruct\1\0\2\ahl\17GruvboxGreen\ticon\t𝓢\15EnumMember\1\0\2\ahl\15GruvboxRed\ticon\b\tNull\1\0\2\ahl\17GruvboxGreen\ticon\tNULL\bKey\1\0\2\ahl\17GruvboxGreen\ticon\t🔐\vObject\1\0\2\ahl\17GruvboxGreen\ticon\b⦿\nArray\1\0\2\ahl\18GruvboxPurple\ticon\b\fBoolean\1\0\2\ahl\14TSBoolean\ticon\b⊨\vNumber\1\0\2\ahl\rTSNumber\ticon\6#\vString\1\0\2\ahl\16GruvboxGray\ticon\t𝓐\rConstant\1\0\2\ahl\18GruvboxPurple\ticon\b\rVariable\1\0\2\ahl\18GruvboxPurple\ticon\b\rFunction\1\0\2\ahl\18GruvboxYellow\ticon\b\14Interface\1\0\2\ahl\17GruvboxGreen\ticon\bﰮ\tEnum\1\0\2\ahl\17GruvboxGreen\ticon\bℰ\16Constructor\1\0\2\ahl\18TSConstructor\ticon\b\nField\1\0\2\ahl\15GruvboxRed\ticon\b\rProperty\1\0\2\ahl\18GruvboxOrange\ticon\b\vMethod\1\0\2\ahl\18GruvboxOrange\ticon\aƒ\nClass\1\0\2\ahl\17GruvboxGreen\ticon\t𝓒\fPackage\1\0\2\ahl\16GruvboxBlue\ticon\b\14Namespace\1\0\2\ahl\16GruvboxBlue\ticon\b\vModule\1\0\2\ahl\16GruvboxBlue\ticon\b\tFile\1\0\0\1\0\2\ahl\16GruvboxAqua\ticon\b\1\0\4\15auto_close\1\27highlight_hovered_item\2\rposition\tleft\nwidth\3\15\nsetup\20symbols-outline\frequire\0", "config", "symbols-outline.nvim")
+time([[Config for symbols-outline.nvim]], false)
 -- Config for: telescope-ui-select.nvim
 time([[Config for telescope-ui-select.nvim]], true)
 try_loadstring("\27LJ\2\2;\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\14telescope\frequire\0", "config", "telescope-ui-select.nvim")
@@ -398,14 +390,18 @@ time([[Config for neo-tree.nvim]], false)
 time([[Config for ack.vim]], true)
 try_loadstring("\27LJ\2\2K\0\0\2\0\4\0\0056\0\0\0009\0\1\0'\1\3\0=\1\2\0K\0\1\0'rg --vimgrep --smart-case --hidden\vackprg\6g\bvim\0", "config", "ack.vim")
 time([[Config for ack.vim]], false)
+-- Config for: nvim-spectre
+time([[Config for nvim-spectre]], true)
+try_loadstring("\27LJ\2\2�\1\0\0\5\0\15\0\0196\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\6\0005\2\4\0005\3\3\0=\3\5\2=\2\a\1B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\1\v\0'\2\f\0'\3\r\0005\4\14\0B\0\5\1K\0\1\0\1\0\1\tdesc\23search and replace+<Cmd>lua require('spectre').open()<CR>\14<leader>S\6n\bset\vkeymap\bvim\19replace_engine\1\0\0\bsed\1\0\0\1\0\1\bcmd\tgsed\nsetup\fspectre\frequire\0", "config", "nvim-spectre")
+time([[Config for nvim-spectre]], false)
 -- Config for: nvim-navic
 time([[Config for nvim-navic]], true)
 try_loadstring("\27LJ\2\2J\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\14highlight\2\nsetup\15nvim-navic\frequire\0", "config", "nvim-navic")
 time([[Config for nvim-navic]], false)
--- Config for: vim-asterisk
-time([[Config for vim-asterisk]], true)
-try_loadstring("\27LJ\2\2�\4\0\0\5\0\r\0A6\0\0\0009\0\1\0009\0\2\0'\1\3\0'\2\4\0'\3\5\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\3\0'\2\6\0'\3\a\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\3\0'\2\b\0'\3\t\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\3\0'\2\n\0'\3\v\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\f\0'\2\4\0'\3\5\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\f\0'\2\6\0'\3\a\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\f\0'\2\b\0'\3\t\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\f\0'\2\n\0'\3\v\0004\4\0\0B\0\5\1K\0\1\0\6x@<Plug>(asterisk-gz#)<Cmd>lua require('hlslens').start()<CR>\ag#@<Plug>(asterisk-gz*)<Cmd>lua require('hlslens').start()<CR>\ag*?<Plug>(asterisk-z#)<Cmd>lua require('hlslens').start()<CR>\6#?<Plug>(asterisk-z*)<Cmd>lua require('hlslens').start()<CR>\6*\6n\20nvim_set_keymap\bapi\bvim\0", "config", "vim-asterisk")
-time([[Config for vim-asterisk]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+try_loadstring("\27LJ\2\0027\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
+time([[Config for which-key.nvim]], false)
 -- Config for: lspkind-nvim
 time([[Config for lspkind-nvim]], true)
 try_loadstring("\27LJ\2\2�\3\0\0\4\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\1\2\0005\2\3\0005\3\4\0=\3\5\2B\1\2\1K\0\1\0\15symbol_map\1\0\25\tText\b\rFunction\b\rOperator\b\nColor\b\nClass\bﴯ\vModule\b\rConstant\b\rProperty\bﰠ\vMethod\b\15EnumMember\b\tUnit\b塞\14Interface\b\vStruct\bפּ\rVariable\b\fSnippet\b\vFolder\b\nEvent\b\nField\bﰠ\18TypeParameter\5\tFile\b\nValue\b\16Constructor\b\tEnum\b\fKeyword\b\14Reference\b\1\0\2\tmode\16symbol_text\vpreset\rcodicons\tinit\flspkind\frequire\0", "config", "lspkind-nvim")
@@ -414,10 +410,10 @@ time([[Config for lspkind-nvim]], false)
 time([[Config for vim-illuminate]], true)
 try_loadstring("\27LJ\2\2\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "vim-illuminate")
 time([[Config for vim-illuminate]], false)
--- Config for: nvim-spectre
-time([[Config for nvim-spectre]], true)
-try_loadstring("\27LJ\2\2�\1\0\0\5\0\15\0\0196\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\6\0005\2\4\0005\3\3\0=\3\5\2=\2\a\1B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\1\v\0'\2\f\0'\3\r\0005\4\14\0B\0\5\1K\0\1\0\1\0\1\tdesc\23search and replace+<Cmd>lua require('spectre').open()<CR>\14<leader>S\6n\bset\vkeymap\bvim\19replace_engine\1\0\0\bsed\1\0\0\1\0\1\bcmd\tgsed\nsetup\fspectre\frequire\0", "config", "nvim-spectre")
-time([[Config for nvim-spectre]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\2�\21\0\0\b\0b\0�\0016\0\0\0'\1\1\0B\0\2\0026\1\0\0'\2\2\0B\1\2\0029\2\3\0015\3\r\0005\4\v\0005\5\t\0005\6\5\0009\a\4\0=\a\6\0069\a\a\0=\a\b\6=\6\n\5=\5\f\4=\4\14\0035\4\16\0005\5\15\0=\5\17\4=\4\18\3B\2\2\0019\2\19\1'\3\20\0B\2\2\0019\2\19\1'\3\21\0B\2\2\0019\2\19\1'\3\22\0B\2\2\0019\2\19\1'\3\17\0B\2\2\0019\2\19\1'\3\23\0B\2\2\0019\2\19\1'\3\24\0B\2\2\0016\2\25\0009\2\26\2'\3\28\0=\3\27\0026\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4 \0'\5!\0005\6\"\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4#\0'\5$\0005\6%\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4&\0'\5'\0005\6(\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4)\0'\5*\0005\6+\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4,\0'\5-\0005\6.\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4/\0'\0050\0005\0061\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\0042\0'\0053\0005\0064\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\0045\0'\0056\0005\0067\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\0048\0'\0059\0005\6:\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4;\0'\5<\0005\6=\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4>\0'\5?\0005\6@\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4A\0'\5B\0005\6C\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4D\0'\5E\0005\6F\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4G\0'\5H\0005\6I\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4J\0'\5K\0005\6L\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4M\0'\5N\0005\6O\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4P\0'\5Q\0005\6R\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4S\0'\5T\0005\6U\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4V\0'\5W\0005\6X\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4Y\0'\5Z\0005\6[\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4\\\0'\5]\0005\6^\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4_\0'\5`\0005\6a\0B\2\5\1K\0\1\0\1\0\1\tdesc\16search text!<Cmd>Telescope live_grep<CR>\14<leader>x\1\0\1\tdesc\19search windows\31<Cmd>Telescope windows<CR>\14<leader>w\1\0\1\tdesc\30search treesitter symbols\"<Cmd>Telescope treesitter<CR>\14<leader>s\1\0\1\tdesc\31search current buffer text1<Cmd>Telescope current_buffer_fuzzy_find<CR>\14<leader>r\1\0\1\tdesc\25search quickfix list <Cmd>Telescope quickfix<CR>\14<leader>q\1\0\1\tdesc,search messages handled by Noice plugin\29<Cmd>Noice telescope<CR>\14<leader>n\1\0\1\tdesc\29search markdown headings\31<Cmd>Telescope heading<CR>\14<leader>m\1\0\1\tdesc\29search lsp document tree,<Cmd>Telescope lsp_document_symbols<CR>\15<leader>ls\1\0\1\tdesc\30search lsp code reference&<Cmd>Telescope lsp_references<CR>\15<leader>lr\1\0\1\tdesc\30search lsp outgoing calls*<Cmd>Telescope lsp_outgoing_calls<CR>\15<leader>lo\1\0\1\tdesc\30search lsp incoming calls*<Cmd>Telescope lsp_incoming_calls<CR>\15<leader>li\1\0\1\tdesc\27search lsp diagnostics#<Cmd>Telescope diagnostics<CR>\15<leader>ld\1\0\1\tdesc\24search key mappings\31<Cmd>Telescope keymaps<CR>\14<leader>k\1\0\1\tdesc\20search builtins\31<Cmd>Telescope builtin<CR>\14<leader>i\1\0\1\tdesc\16search help!<Cmd>Telescope help_tags<CR>\14<leader>h\1\0\1\tdesc\25search changed files%<Cmd>Telescope changed_files<CR>\14<leader>g\1\0\1\tdesc\17search files.<Cmd>Telescope find_files hidden=true<CR>\a;f\1\0\1\tdesc\23search Ex commands <Cmd>Telescope commands<CR>\15<leader>ex\1\0\1\tdesc\18search emojis\29<Cmd>Telescope emoji<CR>\15<leader>ej\1\0\1\tdesc\17search TODOs\27<Cmd>TodoTelescope<CR>\14<leader>d\1\0\1\tdesc\24search colorschemes#<Cmd>Telescope colorscheme<CR>\14<leader>c\1\0\1\tdesc\19search buffers\31<Cmd>Telescope buffers<CR>\a;b\6n\bset\vkeymap\tmain(telescope_changed_files_base_branch\6g\bvim\fwindows\14ui-select\bfzf\nemoji\18changed_files\19load_extension\15extensions\fheading\1\0\0\1\0\1\15treesitter\2\rdefaults\1\0\0\rmappings\1\0\0\6i\1\0\0\n<C-o>\28send_selected_to_qflist\n<esc>\1\0\0\nclose\nsetup\14telescope\22telescope.actions\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\2;\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
@@ -426,28 +422,24 @@ time([[Config for todo-comments.nvim]], false)
 time([[Config for bufferline.nvim]], true)
 try_loadstring("\27LJ\2\2\\\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\foptions\1\0\0\1\0\1\tmode\ttabs\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
 time([[Config for bufferline.nvim]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\2�\21\0\0\b\0b\0�\0016\0\0\0'\1\1\0B\0\2\0026\1\0\0'\2\2\0B\1\2\0029\2\3\0015\3\r\0005\4\v\0005\5\t\0005\6\5\0009\a\4\0=\a\6\0069\a\a\0=\a\b\6=\6\n\5=\5\f\4=\4\14\0035\4\16\0005\5\15\0=\5\17\4=\4\18\3B\2\2\0019\2\19\1'\3\20\0B\2\2\0019\2\19\1'\3\21\0B\2\2\0019\2\19\1'\3\22\0B\2\2\0019\2\19\1'\3\17\0B\2\2\0019\2\19\1'\3\23\0B\2\2\0019\2\19\1'\3\24\0B\2\2\0016\2\25\0009\2\26\2'\3\28\0=\3\27\0026\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4 \0'\5!\0005\6\"\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4#\0'\5$\0005\6%\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4&\0'\5'\0005\6(\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4)\0'\5*\0005\6+\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4,\0'\5-\0005\6.\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4/\0'\0050\0005\0061\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\0042\0'\0053\0005\0064\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\0045\0'\0056\0005\0067\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\0048\0'\0059\0005\6:\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4;\0'\5<\0005\6=\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4>\0'\5?\0005\6@\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4A\0'\5B\0005\6C\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4D\0'\5E\0005\6F\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4G\0'\5H\0005\6I\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4J\0'\5K\0005\6L\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4M\0'\5N\0005\6O\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4P\0'\5Q\0005\6R\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4S\0'\5T\0005\6U\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4V\0'\5W\0005\6X\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4Y\0'\5Z\0005\6[\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4\\\0'\5]\0005\6^\0B\2\5\0016\2\25\0009\2\29\0029\2\30\2'\3\31\0'\4_\0'\5`\0005\6a\0B\2\5\1K\0\1\0\1\0\1\tdesc\16search text!<Cmd>Telescope live_grep<CR>\14<leader>x\1\0\1\tdesc\19search windows\31<Cmd>Telescope windows<CR>\14<leader>w\1\0\1\tdesc\30search treesitter symbols\"<Cmd>Telescope treesitter<CR>\14<leader>s\1\0\1\tdesc\31search current buffer text1<Cmd>Telescope current_buffer_fuzzy_find<CR>\14<leader>r\1\0\1\tdesc\25search quickfix list <Cmd>Telescope quickfix<CR>\14<leader>q\1\0\1\tdesc,search messages handled by Noice plugin\29<Cmd>Noice telescope<CR>\14<leader>n\1\0\1\tdesc\29search markdown headings\31<Cmd>Telescope heading<CR>\14<leader>m\1\0\1\tdesc\29search lsp document tree,<Cmd>Telescope lsp_document_symbols<CR>\15<leader>ls\1\0\1\tdesc\30search lsp code reference&<Cmd>Telescope lsp_references<CR>\15<leader>lr\1\0\1\tdesc\30search lsp outgoing calls*<Cmd>Telescope lsp_outgoing_calls<CR>\15<leader>lo\1\0\1\tdesc\30search lsp incoming calls*<Cmd>Telescope lsp_incoming_calls<CR>\15<leader>li\1\0\1\tdesc\27search lsp diagnostics#<Cmd>Telescope diagnostics<CR>\15<leader>ld\1\0\1\tdesc\24search key mappings\31<Cmd>Telescope keymaps<CR>\14<leader>k\1\0\1\tdesc\20search builtins\31<Cmd>Telescope builtin<CR>\14<leader>i\1\0\1\tdesc\16search help!<Cmd>Telescope help_tags<CR>\14<leader>h\1\0\1\tdesc\25search changed files%<Cmd>Telescope changed_files<CR>\14<leader>g\1\0\1\tdesc\17search files.<Cmd>Telescope find_files hidden=true<CR>\a;f\1\0\1\tdesc\23search Ex commands <Cmd>Telescope commands<CR>\15<leader>ex\1\0\1\tdesc\18search emojis\29<Cmd>Telescope emoji<CR>\15<leader>ej\1\0\1\tdesc\17search TODOs\27<Cmd>TodoTelescope<CR>\14<leader>d\1\0\1\tdesc\24search colorschemes#<Cmd>Telescope colorscheme<CR>\14<leader>c\1\0\1\tdesc\19search buffers\31<Cmd>Telescope buffers<CR>\a;b\6n\bset\vkeymap\tmain(telescope_changed_files_base_branch\6g\bvim\fwindows\14ui-select\bfzf\nemoji\18changed_files\19load_extension\15extensions\fheading\1\0\0\1\0\1\15treesitter\2\rdefaults\1\0\0\rmappings\1\0\0\6i\1\0\0\n<C-o>\28send_selected_to_qflist\n<esc>\1\0\0\nclose\nsetup\14telescope\22telescope.actions\frequire\0", "config", "telescope.nvim")
-time([[Config for telescope.nvim]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)
 try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
 time([[Config for catppuccin]], false)
--- Config for: symbols-outline.nvim
-time([[Config for symbols-outline.nvim]], true)
-try_loadstring("\27LJ\2\2�\t\0\0\4\0:\0=6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\5\0005\3\4\0=\3\6\0025\3\a\0=\3\b\0025\3\t\0=\3\n\0025\3\v\0=\3\f\0025\3\r\0=\3\14\0025\3\15\0=\3\16\0025\3\17\0=\3\18\0025\3\19\0=\3\20\0025\3\21\0=\3\22\0025\3\23\0=\3\24\0025\3\25\0=\3\26\0025\3\27\0=\3\28\0025\3\29\0=\3\30\0025\3\31\0=\3 \0025\3!\0=\3\"\0025\3#\0=\3$\0025\3%\0=\3&\0025\3'\0=\3(\0025\3)\0=\3*\0025\3+\0=\3,\0025\3-\0=\3.\0025\3/\0=\0030\0025\0031\0=\0032\0025\0033\0=\0034\0025\0035\0=\0036\0025\0037\0=\0038\2=\0029\1B\0\2\1K\0\1\0\fsymbols\18TypeParameter\1\0\2\ahl\15GruvboxRed\ticon\t𝙏\rOperator\1\0\2\ahl\15TSOperator\ticon\6+\nEvent\1\0\2\ahl\17GruvboxGreen\ticon\t🗲\vStruct\1\0\2\ahl\17GruvboxGreen\ticon\t𝓢\15EnumMember\1\0\2\ahl\15GruvboxRed\ticon\b\tNull\1\0\2\ahl\17GruvboxGreen\ticon\tNULL\bKey\1\0\2\ahl\17GruvboxGreen\ticon\t🔐\vObject\1\0\2\ahl\17GruvboxGreen\ticon\b⦿\nArray\1\0\2\ahl\18GruvboxPurple\ticon\b\fBoolean\1\0\2\ahl\14TSBoolean\ticon\b⊨\vNumber\1\0\2\ahl\rTSNumber\ticon\6#\vString\1\0\2\ahl\16GruvboxGray\ticon\t𝓐\rConstant\1\0\2\ahl\18GruvboxPurple\ticon\b\rVariable\1\0\2\ahl\18GruvboxPurple\ticon\b\rFunction\1\0\2\ahl\18GruvboxYellow\ticon\b\14Interface\1\0\2\ahl\17GruvboxGreen\ticon\bﰮ\tEnum\1\0\2\ahl\17GruvboxGreen\ticon\bℰ\16Constructor\1\0\2\ahl\18TSConstructor\ticon\b\nField\1\0\2\ahl\15GruvboxRed\ticon\b\rProperty\1\0\2\ahl\18GruvboxOrange\ticon\b\vMethod\1\0\2\ahl\18GruvboxOrange\ticon\aƒ\nClass\1\0\2\ahl\17GruvboxGreen\ticon\t𝓒\fPackage\1\0\2\ahl\16GruvboxBlue\ticon\b\14Namespace\1\0\2\ahl\16GruvboxBlue\ticon\b\vModule\1\0\2\ahl\16GruvboxBlue\ticon\b\tFile\1\0\0\1\0\2\ahl\16GruvboxAqua\ticon\b\1\0\4\15auto_close\1\27highlight_hovered_item\2\rposition\tleft\nwidth\3\15\nsetup\20symbols-outline\frequire\0", "config", "symbols-outline.nvim")
-time([[Config for symbols-outline.nvim]], false)
+-- Config for: vim-asterisk
+time([[Config for vim-asterisk]], true)
+try_loadstring("\27LJ\2\2�\4\0\0\5\0\r\0A6\0\0\0009\0\1\0009\0\2\0'\1\3\0'\2\4\0'\3\5\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\3\0'\2\6\0'\3\a\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\3\0'\2\b\0'\3\t\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\3\0'\2\n\0'\3\v\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\f\0'\2\4\0'\3\5\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\f\0'\2\6\0'\3\a\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\f\0'\2\b\0'\3\t\0004\4\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\1\f\0'\2\n\0'\3\v\0004\4\0\0B\0\5\1K\0\1\0\6x@<Plug>(asterisk-gz#)<Cmd>lua require('hlslens').start()<CR>\ag#@<Plug>(asterisk-gz*)<Cmd>lua require('hlslens').start()<CR>\ag*?<Plug>(asterisk-z#)<Cmd>lua require('hlslens').start()<CR>\6#?<Plug>(asterisk-z*)<Cmd>lua require('hlslens').start()<CR>\6*\6n\20nvim_set_keymap\bapi\bvim\0", "config", "vim-asterisk")
+time([[Config for vim-asterisk]], false)
+-- Config for: LuaSnip
+time([[Config for LuaSnip]], true)
+try_loadstring("\27LJ\2\2�\2\0\0\a\0\r\0\0236\0\0\0009\0\1\0009\0\2\0005\1\3\0\18\2\0\0'\3\4\0'\4\5\0'\5\6\0\18\6\1\0B\2\5\1\18\2\0\0'\3\4\0'\4\a\0'\5\b\0\18\6\1\0B\2\5\0016\2\t\0'\3\n\0B\2\2\0029\2\v\0025\3\f\0B\2\2\1K\0\1\0\1\0\1\npaths\16~/.snippets\tload\29luasnip.loaders.from_lua\frequire-<cmd>lua require('luasnip').jump(-1)<CR>\22<leader><leader>;,<cmd>lua require('luasnip').jump(1)<CR>\22<leader><leader>'\6i\1\0\2\vsilent\2\fnoremap\2\20nvim_set_keymap\bapi\bvim\0", "config", "LuaSnip")
+time([[Config for LuaSnip]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
 vim.cmd [[au FileType qf ++once lua require("packer.load")({'nvim-bqf'}, { ft = "qf" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
-  -- Event lazy-loads
-time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'noice.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
