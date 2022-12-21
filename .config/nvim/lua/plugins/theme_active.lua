@@ -14,6 +14,7 @@ return function(use)
     term_colors = true,
     transparent_background = false,
     compile_path = vim.fn.stdpath "cache" .. "/catppuccin",
+    no_italic = true,
     styles = {
       comments = {},
       conditionals = {},
